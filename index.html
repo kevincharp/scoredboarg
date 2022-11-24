@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Ubuntu:wght@300;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+  <title>ScoreBoard</title>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h3>HOME</h3>
+      <h2 id="home-el">0</h2>
+      <div>
+        <button onclick="home1()">+1</button>
+        <button onclick="home3()">+3</button>
+        <button onclick="home6()">Touchdown</button>
+        <button class="back-btn" onclick="backhome()">BACK</button>
+      </div>
+    </div>
+    <div class="reset-div">
+      <h2>VS</h2>
+      <button class="reset-btn" onclick="reset()">RESET</button>
+      <button class="record-btn" onclick="reset()">RECORD</button>
+    </div>
+    <div>
+      <h3>GUEST</h3>
+      <h2 id="guest-el">0</h2>
+      <div>
+        <button onclick="guest1()">+1</button>
+        <button onclick="guest3()">+3</button>
+        <button onclick="guest6()">Touchdown</button>
+        <button class="back-btn" onclick="backguest()">BACK</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+
+</html>
